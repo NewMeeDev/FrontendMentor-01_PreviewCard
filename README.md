@@ -20,10 +20,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 - Using CSS Flexbox
 - How to create a color overlay with background images
 - How to add small icons to text using the CSS pseudo element ::before
-<<<<<<< HEAD
 - Using CSS transitions
-=======
->>>>>>> 8a41c37c02d4c3c066dc74fc686e578bb2114509
 
 ### Code snippets
 
@@ -42,7 +39,6 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
     height: 250px;
     background-size: cover;
     border-radius: .5em;;
-<<<<<<< HEAD
 }
 
 .overlay-effect {
@@ -61,23 +57,3 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
     cursor: pointer;
 }
 ```
-=======
-}
-
-.overlay-effect {
-    min-height: 250px;
-    opacity: 0;
-    transition: 1s ease;
-    background-color: rgba(0, 255, 247, 0.7);
-    border-radius: .5em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo:hover .overlay-effect {
-    opacity: 1;
-    cursor: pointer;
-}
-```
->>>>>>> 8a41c37c02d4c3c066dc74fc686e578bb2114509
