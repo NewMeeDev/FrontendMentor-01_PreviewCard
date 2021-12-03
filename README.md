@@ -6,33 +6,54 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### Screenshot
 
-![screen.png](./screenshot.jpg)
+![](./screen.png)
 
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
 - Background-Image-Overlay
 - Pseudo-Elements
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+- Using CSS Flexbox
+- How to create a color overlay with background images
+- How to add small icons to text using the CSS pseudo element ::before
+- Using CSS transitions
 
-To see how you can add code snippets, see below:
+### Code snippets
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<div class="logo">
+  <div class="overlay-effect">
+    <img src="images/icon-view.svg" alt="">
+  </div>
+</div>
 ```
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.logo {
+    margin: 20px;
+    background: url(images/image-equilibrium.jpg) 0 0 no-repeat; 
+    height: 250px;
+    background-size: cover;
+    border-radius: .5em;;
 }
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+
+.overlay-effect {
+    min-height: 250px;
+    opacity: 0;
+    transition: 1s ease;
+    background-color: rgba(0, 255, 247, 0.7);
+    border-radius: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo:hover .overlay-effect {
+    opacity: 1;
+    cursor: pointer;
 }
 ```

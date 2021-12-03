@@ -77,7 +77,7 @@ section h2 {
     filter: blur(0.03em);
 }
 
-.eth:before {
+.eth::before {
     content: "";
     display: block;
     background: url(images/icon-ethereum.svg) no-repeat;
@@ -92,7 +92,7 @@ section h2 {
     font-weight: 400;
 }
 
-.clock:before {
+.clock::before {
     content: "";
     display: block;
     background: url(images/icon-clock.svg) no-repeat;
